@@ -10,7 +10,7 @@ class Cookbook extends Component {
             index: 0
         }
     }
-    // Create two methods... one called increase, and one called decrease. In the increase method, check the value of index to see if it is less than recipes.length. If so, use setState to increment index by 1.
+    // Create two methods... one called increase, and one called decrease. In the increase method, check the value of index to see if it is less than recipes.length - 1. If so, use setState to increment index by 1.
 
     // In the decrease method, check to see if the value of index is greater than 0. If so, use setState to decrement index by 1.
 
