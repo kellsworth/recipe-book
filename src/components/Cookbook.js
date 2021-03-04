@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import RecipeCard from './RecipeCard'
+import Nav from './Nav'
 import recipes from '../recipes'
 
 class Cookbook extends Component {
@@ -16,20 +17,15 @@ class Cookbook extends Component {
 
     // Bind these methods, giving them the context of this.
 
+    //Pass these methods as props to Nav the component.
+
     render(){
         // Pass recipes and index as props to RecipeCard.
-
-        //Give the 'previous' button an onClick event, assigning it to the decrease method.
-
-        //Give the 'next' button an onClick event, assigning it to the increase method.
 
         return (
             <div className="container">
                 <RecipeCard/>
-                <div className="buttons">
-                    <button>Previous</button>
-                    <button>Next</button>
-                </div>
+                <Nav/>
             </div>
         )
     }
